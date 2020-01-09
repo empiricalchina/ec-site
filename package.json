@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "develop": "cross-env NODE_ENV=development gatsby develop",
-    "deploy": "cross-env NODE_ENV=production gatsby build && gh-pages -d public -b master",
+    "ghpages": "gh-pages -d public -b master",
+    "deploy": "cross-env NODE_ENV=production gatsby build && ghpages",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
     "build": "gatsby build",
