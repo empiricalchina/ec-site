@@ -24,7 +24,7 @@ Rename `.env.example` to either `.env.production` or `.env.development`. Fill in
 ## Built With
 
 - [Gatsby.js](https://github.com/gatsbyjs/gatsby)
-- [\@lekoarts/gatsby-theme-minimal-blog](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog)
+- [lekoarts/gatsby-theme-minimal-blog](https://github.com/LekoArts/gatsby-themes/tree/master/themes/gatsby-theme-minimal-blog)
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
