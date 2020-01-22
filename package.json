@@ -8,7 +8,6 @@
   "scripts": {
     "develop": "cross-env NODE_ENV=development gatsby develop",
     "build": "cross-env NODE_ENV=production gatsby build",
-    "ghpages": "gh-pages -b master public --remote ghpages",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -30,7 +29,6 @@
   },
   "devDependencies": {
     "cross-env": "^5.2.0",
-    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8",
-    "gh-pages": "^2.2.0"
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.8"
   }
 }

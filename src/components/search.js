@@ -16,7 +16,7 @@ const Search = () => {
   };
   return (
     <Box>
-      <Text sx={{ mb: 2, fontSize: [ 1, 2, 3 ] }}>Find papers we've tweeted about</Text>
+      <Text sx={{ mb: 2, fontSize: [ 1, 2, 2 ] }}>Find papers we've tweeted about</Text>
       <Flex as="form" onSubmit={openWindow}>
         <Box sx={{ flex: '1 1 auto', mr: 1 }}>
           <Input onChange={handleInput} />

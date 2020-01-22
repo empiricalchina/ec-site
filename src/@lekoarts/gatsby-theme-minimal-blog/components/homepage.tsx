@@ -7,7 +7,7 @@ import Bottom from '../texts/bottom';
 // import Title from '@lekoarts/gatsby-theme-minimal-blog/src/components/title';
 // import Listing from '@lekoarts/gatsby-theme-minimal-blog/src/components/listing';
 // import List from '@lekoarts/gatsby-theme-minimal-blog/src/components/list';
-import useSiteMetadata from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata';
+// import useSiteMetadata from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata';
 // import replaceSlashes from '@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes';
 import Search from '../../../components/search';
 
@@ -23,9 +23,8 @@ type PostsProps = {
   }[];
 };
 
-const Homepage = ({ posts }: PostsProps) => {
+const Homepage = () => {
   // const { basePath, blogPath } = useSiteMetadata();
-
   return (
     <Layout>
       <section sx={{ mb: [ 2, 3, 4 ], p: { fontSize: [ 1, 2, 3 ] } }}>

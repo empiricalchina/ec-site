@@ -11,10 +11,11 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Location } from '@reach/router';
 
 library.add(fab, faExternalLinkAlt);
 
-const Header = ({ pathname }) => {
+const Header = () => {
   const { siteTitle, externalLinks, basePath } = useSiteMetadata();
   const nav = useNavigation();
   const [ colorMode, setColorMode ] = useColorMode();
@@ -32,7 +33,12 @@ const Header = ({ pathname }) => {
           aria-label={`${siteTitle} - Back to home`}
           sx={{ color: `heading`, textDecoration: `none` }}
         >
-          <h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [ 3, 4 ] }}>{pathname === '/' ? '' : siteTitle}</h1>
+          <Location>
+            {({ location }) =>
+              location.pathname !== '/' && (
+                <h1 sx={{ my: 0, fontWeight: `medium`, fontSize: [ 3, 4 ] }}>{siteTitle}</h1>
+              )}
+          </Location>
         </Link>
       </Flex>
       <div
