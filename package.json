@@ -8,7 +8,7 @@
   "scripts": {
     "develop": "cross-env NODE_ENV=development gatsby develop",
     "build": "cross-env NODE_ENV=production gatsby build",
-    "ghpages": "gh-pages -b master public --remote ghpages",
+    "ghpages": "gh-pages -b master -d public --remote ghpages",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
